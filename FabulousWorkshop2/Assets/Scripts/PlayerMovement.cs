@@ -29,9 +29,13 @@ public class PlayerMovement : MonoBehaviour
                 agent.SetDestination(hit.point);
             }
         }
-        if (hasHat) 
+        if (hasHat)
         {
             HandleHatGift();
+        }
+        else 
+        {
+            HandleGiftPickup();
         }
     }
 
@@ -51,6 +55,25 @@ public class PlayerMovement : MonoBehaviour
             }
             guest.GiveHat(hatPrefab);
             hasHat = false;
+        }
+    }
+
+    void HandleGiftPickup() 
+    {
+        if (hasHat) 
+        {
+            return;
+        }
+        Collider[] nearbyColliders = Physics.OverlapSphere(transform.position, giveRadius);
+        foreach (Collider collider in nearbyColliders)
+        {
+            if (!collider.CompareTag("Gift"))
+            {
+                continue;
+            }
+            hasHat = true;
+            Destroy(collider.gameObject);
+            break;
         }
     }
 }

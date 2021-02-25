@@ -108,6 +108,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab8c71d9e763c234ba5b927ddf992706, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  giveRadius: 3
+  hatPrefab: {fileID: 3800567524107808289, guid: 85aa603695d97934181c2e85b9e2e78f,
+    type: 3}
 --- !u!195 &1777840699450435774
 NavMeshAgent:
   m_ObjectHideFlags: 0
