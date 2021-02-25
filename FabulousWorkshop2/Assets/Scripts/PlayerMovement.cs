@@ -5,7 +5,12 @@ using UnityEngine.AI;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] float giveRadius;
+    [SerializeField] GameObject hatPrefab;
+
     NavMeshAgent agent;
+    bool hasHat;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +28,29 @@ public class PlayerMovement : MonoBehaviour
             {
                 agent.SetDestination(hit.point);
             }
+        }
+        if (hasHat) 
+        {
+            HandleHatGift();
+        }
+    }
+
+    void HandleHatGift() 
+    {
+        Collider[] nearbyColliders = Physics.OverlapSphere(transform.position, giveRadius);
+        foreach (Collider collider in nearbyColliders) 
+        {
+            if (!collider.CompareTag("Guest")) 
+            {
+                continue;
+            }
+            Guest guest = collider.GetComponent<Guest>();
+            if (guest.HasHat) 
+            {
+                continue;
+            }
+            guest.GiveHat(hatPrefab);
+            hasHat = false;
         }
     }
 }
