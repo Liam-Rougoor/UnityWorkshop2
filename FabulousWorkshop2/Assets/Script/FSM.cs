@@ -21,7 +21,7 @@ public class FSM : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        current_State = IDLE;
+        current_State = CHASE;
         agent = GetComponent<NavMeshAgent>();
         agent.autoBraking = false;
     }
@@ -146,8 +146,8 @@ public class FSM : MonoBehaviour
 
     private void chase()
     {
-        playerPosition = GameObject.Fine("Player");
-        agent.SetDestination(playerPosition);
+        GameObject playerPosition = GameObject.Find("Player");
+        agent.SetDestination(playerPosition.transform.position);
     }
 
     private bool playerNear()

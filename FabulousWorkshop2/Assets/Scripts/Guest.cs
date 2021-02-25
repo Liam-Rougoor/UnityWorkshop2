@@ -21,7 +21,8 @@ public class Guest : MonoBehaviour
     public void GiveHat(GameObject hat) 
     {
         if (hasHat) { return; }
-        Instantiate(hat, hatPosition.position, Quaternion.identity);
+        GameObject hatObject = Instantiate(hat, hatPosition.position, Quaternion.identity);
+        hatObject.tag = "Untagged";
         hasHat = true;
     }
 }
