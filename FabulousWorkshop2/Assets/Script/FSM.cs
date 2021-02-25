@@ -9,6 +9,8 @@ public class FSM : FSM
     const int CHASE = 3;
 
     int current_State;
+    float current_time;
+    float previous_time;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +21,7 @@ public class FSM : FSM
     // Update is called once per frame
     void Update()
     {
+
         switch (current_State)
         {
             case IDLE:
@@ -132,21 +135,45 @@ public class FSM : FSM
 
     private bool playerNear()
     {
-
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.forward, out hit))
+        {
+            float distance = hit.distance;
+            if (distance == 2)
+            {
+                return true;
+            }
+        }
     }
 
     private bool timeToPatrol()
     {
-
+        if(Time.time - previous_time >= 5)
+        {
+            previous_time = Time.time;
+            return true;
+        }
     }
 
     private bool timeToIdle()
     {
-
+        if (Time.time - previous_time >= 5)
+        {
+            previous_time = Time.time;
+            return true;
+        }
     }
 
     private bool playerOutOfRange()
     {
-
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.forward, out hit))
+        {
+            float distance = hit.distance;
+            if (distance > 2)
+            {
+                return true;
+            }
+        }
     }
 }
