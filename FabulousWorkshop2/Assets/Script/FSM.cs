@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class FSM : MonoBehaviour
 {
@@ -12,10 +13,17 @@ public class FSM : MonoBehaviour
     float current_time;
     float previous_time;
 
+    public Transform[] points;
+    private int destPoint = 0;
+
+    NavMeshAgent agent;
+
     // Start is called before the first frame update
     void Start()
     {
         current_State = IDLE;
+        agent = GetComponent<NavMeshAgent>();
+        agent.autoBraking = false;
     }
 
     // Update is called once per frame
@@ -92,7 +100,10 @@ public class FSM : MonoBehaviour
 
     void patrol_Do()
     {
-        patrol();
+        if(!agent.pathPending && agent.remainingDistance < 0.5f)
+        {
+            patrol();
+        }
         playerNear();
         timeToIdle();
     }
@@ -125,12 +136,18 @@ public class FSM : MonoBehaviour
 
     private void patrol()
     {
-
+        if(points.Length == 0)
+        {
+            return;
+        }
+        agent.destination = points[destPoint].position;
+        destPoint = (destPoint + 1) % points.Length;
     }
 
     private void chase()
     {
-
+        playerPosition = GameObject.Fine("Player");
+        agent.SetDestination(playerPosition);
     }
 
     private bool playerNear()
@@ -159,7 +176,7 @@ public class FSM : MonoBehaviour
 
     private bool timeToIdle()
     {
-        if (Time.time - previous_time >= 5)
+        if (Time.time - previous_time >= 7)
         {
             previous_time = Time.time;
             return true;
