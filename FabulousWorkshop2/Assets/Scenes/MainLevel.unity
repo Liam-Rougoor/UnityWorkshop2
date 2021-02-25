@@ -120,7 +120,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: a81a7f21931ba564f8052e80e5aaed31, type: 2}
 --- !u!1 &25349313
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,7 +138,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &25349314
 Transform:
@@ -226,6 +226,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Wall (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2890384381147357040, guid: 2706d92a125c3db4c8936434969c8c75,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3381422674385055853, guid: 2706d92a125c3db4c8936434969c8c75,
         type: 3}
       propertyPath: m_RootOrder
@@ -310,6 +315,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Basic Wall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2890384381147357040, guid: 2706d92a125c3db4c8936434969c8c75,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3381422674385055853, guid: 2706d92a125c3db4c8936434969c8c75,
         type: 3}
@@ -403,7 +413,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &359815840
 Transform:
@@ -534,7 +544,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &725121127
 MeshCollider:
@@ -623,6 +633,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Wall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2890384381147357040, guid: 2706d92a125c3db4c8936434969c8c75,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3381422674385055853, guid: 2706d92a125c3db4c8936434969c8c75,
         type: 3}
       propertyPath: m_RootOrder
@@ -707,6 +722,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Basic Wall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2890384381147357040, guid: 2706d92a125c3db4c8936434969c8c75,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3381422674385055853, guid: 2706d92a125c3db4c8936434969c8c75,
         type: 3}
@@ -795,7 +815,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1009405814
 Transform:
@@ -825,6 +845,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Basic Wall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2890384381147357040, guid: 2706d92a125c3db4c8936434969c8c75,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3381422674385055853, guid: 2706d92a125c3db4c8936434969c8c75,
         type: 3}
@@ -910,6 +935,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Basic Wall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2890384381147357040, guid: 2706d92a125c3db4c8936434969c8c75,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3381422674385055853, guid: 2706d92a125c3db4c8936434969c8c75,
         type: 3}
@@ -1001,7 +1031,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1102381155
 Transform:
@@ -1088,6 +1118,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Basic Wall (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2890384381147357040, guid: 2706d92a125c3db4c8936434969c8c75,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3381422674385055853, guid: 2706d92a125c3db4c8936434969c8c75,
         type: 3}
@@ -1257,6 +1292,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Wall (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2890384381147357040, guid: 2706d92a125c3db4c8936434969c8c75,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3381422674385055853, guid: 2706d92a125c3db4c8936434969c8c75,
         type: 3}
       propertyPath: m_RootOrder
@@ -1341,6 +1381,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Basic Wall (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2890384381147357040, guid: 2706d92a125c3db4c8936434969c8c75,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3381422674385055853, guid: 2706d92a125c3db4c8936434969c8c75,
         type: 3}
@@ -1437,7 +1482,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1629219095
 Transform:
@@ -1619,7 +1664,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1791578145
 Transform:
@@ -1663,7 +1708,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1915546004
 Transform:
@@ -1751,6 +1796,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Wall (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2890384381147357040, guid: 2706d92a125c3db4c8936434969c8c75,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3381422674385055853, guid: 2706d92a125c3db4c8936434969c8c75,
         type: 3}
       propertyPath: m_RootOrder
@@ -1835,6 +1885,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Basic Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2890384381147357040, guid: 2706d92a125c3db4c8936434969c8c75,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3381422674385055853, guid: 2706d92a125c3db4c8936434969c8c75,
         type: 3}
