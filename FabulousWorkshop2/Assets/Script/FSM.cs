@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FSM : FSM
+public class FSM : MonoBehaviour
 {
     const int IDLE = 1;
     const int PATROL = 2;
@@ -144,6 +144,7 @@ public class FSM : FSM
                 return true;
             }
         }
+        return false;
     }
 
     private bool timeToPatrol()
@@ -153,6 +154,7 @@ public class FSM : FSM
             previous_time = Time.time;
             return true;
         }
+        return false;
     }
 
     private bool timeToIdle()
@@ -162,6 +164,7 @@ public class FSM : FSM
             previous_time = Time.time;
             return true;
         }
+        return false;
     }
 
     private bool playerOutOfRange()
@@ -175,5 +178,6 @@ public class FSM : FSM
                 return true;
             }
         }
+        return false;
     }
 }
