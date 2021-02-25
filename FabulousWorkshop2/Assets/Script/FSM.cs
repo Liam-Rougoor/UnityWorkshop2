@@ -13,6 +13,8 @@ public class FSM : MonoBehaviour
     float current_time;
     float previous_time;
 
+    Vector3 playerPosition;
+
     public Transform[] points;
     private int destPoint = 0;
 
@@ -146,7 +148,7 @@ public class FSM : MonoBehaviour
 
     private void chase()
     {
-        playerPosition = GameObject.Fine("Player");
+        playerPosition = GameObject.Find("Player").transform.position;
         agent.SetDestination(playerPosition);
     }
 
